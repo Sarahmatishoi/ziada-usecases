@@ -1,0 +1,6 @@
+site_name: Ziada use cases
+nav:
+  - Frontend: index.md
+  - Backend: backend.md
+  
+theme: readthedocs
