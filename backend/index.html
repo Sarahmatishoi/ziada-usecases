@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Backend - Ziada use cases</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../css/theme.css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Backend";
+    var mkdocs_page_input_path = "backend.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Ziada use cases</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="..">Frontend</a>
+                    </li>
+                </ul>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Backend</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Ziada use cases</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Backend</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+
+          <div role="main">
+            <div class="section">
+              
+                <h3> Client data model for holding the attributes of sign up </h3>
+
+<p><code>backend/models/users_mdls.js(var usersSchema=new Schema)</code></p>
+<p> It stores user signup credentials</p>
+<p> It save user credentials for sing up and exports it to the database where is stored</p>
+
+<p><img alt="Screenshot" src="../img/image3.png" /></p>
+<h3> Client data model for holding the attributes of sign up</h3>
+
+<p><code>backend/models/users_mdls.js(var usersSchema=new Schema)</code></p>
+<p> It stores user signup credentials</p>
+<p> It save user credentials for sing up and exports it to the database where is stored</p>
+
+<p><img alt="Screenshot" src="../img/image3.png" /></p>
+<h3>Client Authentication to check if the user has entered a valid username and password for login.</h3>
+
+<h3>Client data models for holding the client attributes of login</h3>
+
+<p><code>backend/models/users_mdls.js(var usersSchema=new Schema)</code></p>
+<p> It stores client login credentials</p>
+<p> It save user credentials for login and exports it to the database where is stored</p>
+
+<p><img alt="Screenshot" src="../img/image3.png" /></p>
+<h3>Client data model for holding the attributes of the client profile setup </h3>
+
+<p> It stores client profile setup credentials</p>
+
+<p> It save user credentials for profile setup and exports it to the database where is stored</p>
+
+<p><code>backend/models/users_mdls.jsVar UsersSchema = new Schema)</code></p>
+<p><img alt="Screenshot" src="../img/image8.png" /></p>
+<h3>Client data model for holding the attributes of resetting the password</h3>
+
+<p><code>backend/services/users_srv.js Async function reset_password)</code></p>
+<p> It stores user reset password credentials</p>
+
+<p> It save user credentials for resetting password and exports it to the database where it is stored</p>
+
+<p><img alt="Screenshot" src="../img/image10.png" /></p>
+<h3> Send email for verifying client reset password.</h3>
+
+<p><code>backend/interfaces/email.js(const sendEmail=async(to,subject,content,attachment)</code></p>
+<p><img alt="Screenshot" src="../img/image11.png" /></p>
+<h3>Data models for holding the attributes of the different services</h3>
+
+<p><code>backend/models/services_mdls.js(Var ServicesSchema )</code></p>
+<p> It stores the atributes of different services</p>
+
+<p> It saves the attributes of the different services and exports them to the database where it is stored</p>
+
+<p><img alt="Screenshot" src="../img/image13.png" /></p>
+<h3>Data model for holding the attributes of the service category</h3>
+
+<p><code>backend/models/service_category_mdls.js(var ServiceCategorySchema = new Schema)</code></p>
+<p> It stores attributes of different service categories</p>
+
+<p> It saves the attributes of the different service categories and exports them to the database where it is stored</p>
+
+<p><img alt="Screenshot" src="../img/image16.png" /></p>
+<h3>Data models for holding the attributes of the service sub-category </h3>
+
+<p><code>backend/models/service_sub_category_mdls.js(var ServiceSubCategorySchema)</code></p>
+<p> It stores the attributes of the diiferent service sub categories </p>
+
+<p> It saves the attributes of the different service sub categories and exports them to the database where it is stored</p>
+
+<p><img alt="Screenshot" src="../img/image18.png" /></p>
+<h3>Data model for holding the credentials of the service provider.</h3>
+
+<p><code>backend/models/service_provider_mdls.js(var ServiceProviderSchema = new Schema)</code></p>
+<p> It stores the credintials of different service providers </p>
+
+<p> It saves the credentials of different service providers and exports them to the database where it is stored</p>
+
+<p><img alt="Screenshot" src="../img/image20.png" /></p>
+<h3> data model for holding the data of the client  review</h3>
+
+<p><code>backend/models/reviews_mdls.js(var ReviewSchema = new Schema)</code></p>
+<p> It stores the data of the client review</p>
+
+<p> It saves the data of the client reviews and exports them into the database where it is stored</p>
+
+<p><img alt="Screenshot" src="../img/image22.png" /></p>
+<h3>Data model for getting  the client  review</h3>
+
+<p><code>backend/controllers/review_ctrl.js(var ReviewSchema = new Schema)</code></p>
+<p> It stores the attributes for getting client reviews</p>
+
+<p> It saves the attributes of getting client reviews and exports them into the database where it is stored</p>
+
+<p><img alt="Screenshot" src="../img/image23.png" /></p>
+<h3>Data model for holding the terms and condition attributes</h3>
+
+<p><code>backend/models/terms_condition_mdls.js(Var  TncSchema=new Schema)</code></p>
+<p> It stores the attributes for the terms and conditions</p>
+
+<p> It saves the attributes of the terms and conditions and exports them into the database where it is stored</p>
+
+<p><img alt="Screenshot" src="../img/image25.png" /></p>
+<h3>Data model for holding the service provider registeration attributes</h3>
+
+<p><code>backend/services/service_provider_srv.js(add_service_provider</code></p>
+<p> It stores the credentials for service provider regestration</p>
+
+<p> It saves the credentials of the service rpovider regestration and exports them into the database where is stored</p>
+
+<p><img alt="Screenshot" src="../img/image26.png" /></p>
+<h3>Verification to check if the service provider provider account  is already  existing.</h3>
+
+<p><code>backend/services/service_provider_srv.js(add_service_provider</code></p>
+<p> It stores the attributes for service provider verification account</p>
+
+<p> It saves attributes of the service provider account verification and exports them in to the database where it is stored</p>
+
+<p><img alt="Screenshot" src="../img/image26.png" /></p>
+<h3>Data model for holding the attributes of the service provider profile information. .</h3>
+
+<p><code>backend/services/service_provider_srv.js(add_service_provider</code></p>
+<p> It stores the attributes for service provider profile information</p>
+
+<p> It saves the attributes of the service provider profile information and exports them into the database where is stored</p>
+
+<p><img alt="Screenshot" src="../img/image26.png" /></p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href=".." class="btn btn-neutral" title="Frontend"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href=".." style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="None">
+  
+  
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <title>Ziada use cases</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="css/theme.css" />
+  <link rel="stylesheet" href="css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Frontend";
+    var mkdocs_page_input_path = "index.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="js/jquery-2.1.1.min.js" defer></script>
+  <script src="js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="." class="icon icon-home"> Ziada use cases</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href=".">Frontend</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="backend/">Backend</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href=".">Ziada use cases</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Frontend</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+
+          <div role="main">
+            <div class="section">
+              
+                <h3> Client Sign up screen </h3>
+
+<p><code>kazi/app/java/ke.co.kaziapp/ui/v1/register activity.kt(class RegisterActivity : NetworkSensingBaseActivity)</code></p>
+<p> - It creates a new user and save the user details to the backend </p>
+
+<p> - It verifies user before registering </p>
+
+<p> - It validate the user entities to ensure it is in the right format </p>
+
+<p> - It ensures the client agrees with the terms and condition of the app before registering</p>
+
+<p><img alt="Screenshot" src="img/image1.png" /></p>
+<h3> Client Verification for verifying the new account</h3>
+
+<p><code>kazi/appjava/ke.co.kaziapp/ui/v1/GetOtpActivity.kt(class GetOtpActivity : NetworkSensingBaseActivity)</code></p>
+<p> - It verifies the new acccount to ensure the credentials are valid before registering</p>
+
+<p> - it ensures that the client credentials for the new account are valid </p>
+
+<p><img alt="Screenshot" src="img/image2.png" /></p>
+<h3> Client Login screen</h3>
+
+<p><code>kazi/app/java/ke.co.kaziapp/ui/v1/login activity.kt(class LoginActivity : NetworkSensingBaseActivity)</code></p>
+<p> - It verifies to check if the client logs in with the account that is already in the system</p>
+
+<p> - It authenticate the client loging in with the account that matches the one in the system</p>
+
+<p> - It validate the client password to ensure that the client enters the correct password that matches the one that is already registered in the system </p>
+
+<p><img alt="Screenshot" src="img/image4.png" /></p>
+<h3> Client Verification for verifying the existing account </h3>
+
+<p><code>kazi/app/java/ke.co.kaziapp/ui/v1/GetOtpActivity.kt(class GetOtpActivity : NetworkSensingBaseActivity)</code></p>
+<p> - It verifies the phone number for sending the otp </p>
+
+<p> - It verifies the otp to make sure that the otp send to the user is the valid otp</p>
+
+<p> - It ensures that the otp entered by the user is the correct one</p>
+
+<p><img alt="Screenshot" src="img/image2.png" /></p>
+<h3> Client set up profile screen</h3>
+
+<p><code>kazi/app/java/ke.co.kaziapp/ui/v1/profilesetting activity.kt(class ProfileSettingsActivity NetworkSensingBaseActivity)</code></p>
+<p> - It creates a new user profile and saves the details to the backend </p>
+
+<p> - It verifies the data for profile setting to ensure that the client enters the correct data with the correct format</p>
+
+<p> - It converts the image-url into string </p>
+
+<p> - It verifies the profile picture to ensure it meets the requirements and the client uploads the correct image </p>
+
+<p><img alt="Screenshot" src="img/image5.png" /></p>
+<h3>Client Validation for validating if the client have entered the valid credentials of profile setup.</h3>
+
+<p><code>kazi/app/java/ke.co.kaziapp/ui/v1/profilesetting activity.kt(private fun validate)</code></p>
+<p> - It creates a new user profile and saves the details to the backend </p>
+
+<p> - It verifies the data for profile setting to ensure that the client enters the correct data with the correct format</p>
+
+<p> - It converts the image-url into string </p>
+
+<p> - It verifies the profile picture to ensure it meets the requirements and the client uploads the correct image </p>
+
+<p><img alt="Screenshot" src="img/image6.png" /></p>
+<h3>Notification screen to notify the client of the new services that are available in the application. </h3>
+
+<p><code>kazi/app/java/ke.co.kaziapp/src/main/view/client/inbox/notifications/InboxNotificationsAdapter.kt</code></p>
+<p><img alt="Screenshot" src="img/image7.png" /></p>
+<h3>Client reset password screen </h3>
+
+<p><code>kazi/app/java/ke.co.kaziapp/ui/v1/forgot password Activity/private fun resetPassword</code></p>
+<p> - It verifies to check if  the user has entered the correct credential for resseting password </p>
+
+<p> - It validates the new password created  </p>
+
+<p><img alt="Screenshot" src="img/image9.png" /></p>
+<h3>Explore service screen </h3>
+
+<p><code>kazi/app/java/ke.co.kaziapp/ui/v1/servicelistActivity( class ServicesListActivity : NetworkSensingBaseActivity</code></p>
+<p> - It  </p>
+
+<p><img alt="Screenshot" src="img/image12.png" /></p>
+<h3>Validation to validate  if the user have entered the valid credentials.</h3>
+
+<p><code>kazi/app/java/ke.co.kaziapp/ui/v1/profilesetting activity.kt( private fun validate)</code></p>
+<p><img alt="Screenshot" src="img/image14.png" /></p>
+<h3> Explore Service category screen </h3>
+
+<p><code>kazi/app/java/ke.co.kaziapp/ui/v1/service category Activity.kt(class ServiceSubCategoryActivity : NetworkSensingBaseActivity)</code></p>
+<p><img alt="Screenshot" src="img/image15.png" /></p>
+<h3> Service sub-category screen</h3>
+
+<p><code>kazi/app/java/ke.co.kaziapp/ui/v1/servicesubcategoryActivity,kt(class ServiceSubCategoryActivity : NetworkSensingBaseActivity)</code></p>
+<p> - It creates a new  service sub-category and saves the details to the backend </p>
+
+<p> - It verifies service sub-category details before saving</p>
+
+<p> - It validate the service sub-category entities to ensure it is in the right format </p>
+
+<p><img alt="Screenshot" src="img/image17.png" /></p>
+<h3>Service provider screen</h3>
+
+<p><code>kazi/app/java/ke.co.kaziapp/ui/v1/serviceproviderinfoActivity,kt( class ServiceProviderInfoActivity : AppCompatActivity)</code></p>
+<p><img alt="Screenshot" src="img/image19.png" /></p>
+<h3> Client review screen</h3>
+
+<p><code>kazi/app/java/ke.co.kaziapp/ui/v1/review/ClientreviewFragment(class ClientReviewsFragment)</code></p>
+<p> - It verifies client review details</p>
+
+<p> - It validate the client review entities to ensure it is in the right format </p>
+
+<p><img alt="Screenshot" src="img/image21.png" /></p>
+<h3>Terms and condition screen </h3>
+
+<p><code>kazi/app/java/ke.co.kaziapp/ui/v1/terms and conditions Activity,kt( class TermAndConditionsActivity : AppCompatActivity)</code></p>
+<p><img alt="Screenshot" src="img/image24.png" /></p>
+<h3>Chat screen </h3>
+
+<p><code>kazi/app/java/ke.co.kaziapp/ui/v1/ChatsActivity.kt( class Terms And Conditions Activity : AppCompatActivity)</code></p>
+<h3> Service provider Sign up screen </h3>
+
+<p><code>kazi/app/java/ke.co.kaziapp/ui/v1/RegisterActivity.kt(private fun validate)</code></p>
+<p> - It creates a new service provider and save the the details into the backend </p>
+
+<p> - It verifies the service provider details before registering </p>
+
+<p> - It validate the service provider entities to make sure it is in the right format </p>
+
+<p> - It ensures service provider agrees with the terms and condition before registering </p>
+
+<p><img alt="Screenshot" src="img/image27.png" /></p>
+<h3> Authentication  to check if the service provider has entered the correct credentials.</h3>
+
+<p><code>kazi/app/java/ke.co.kaziapp/ui/v1/RegisterActivity.kt(private fun validate)</code></p>
+<p><img alt="Screenshot" src="img/image27.png" /></p>
+<h3> Service provider set up profile screen</h3>
+
+<p><code>kazi/app/java/ke.co.kaziapp/ui/v1/profilesetting activity.kt(class ProfileSettingsActivity NetworkSensingBaseActivity)</code></p>
+<p> - It creates a new service provider profile and saves the details into the backend </p>
+
+<p> - It verifies the data for profile setting to ensure that the service provider enters the correct data with the correct format</p>
+
+<p> - It converts the image-url into string </p>
+
+<p> - It verifies the profile picture to ensure it meets the requirements and the service provider  uploads the correct image </p>
+
+<p><img alt="Screenshot" src="img/image28.png" /></p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="backend/" class="btn btn-neutral float-right" title="Backend">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+      <span><a href="backend/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '.';</script>
+    <script src="js/theme_extra.js" defer></script>
+    <script src="js/theme.js" defer></script>
+      <script src="search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
+
+<!--
+MkDocs version : 1.2.3
+Build Date UTC : 2023-01-25 10:54:01.872509+00:00
+-->
